@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebAudio SandBox</title>
+    <link href="https://fonts.googleapis.com/css?family=Faster+One|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 id="mainHeader">WebAudioSandBox</h1>
+    <main>
+        <div id="leftSection">
+            <div class="oscContent">
+            <div class="oscDetail" id="printOsc1"></div>
+            <div id="selectOsc1">
+                <input type="radio" id="snwave1" name="osc1" value="sine" checked>
+                <label for="snwave1">sine</label>
+                <input type="radio" id="trwave1" name="osc1" value="triangle">
+                <label for="trwave1">triangle</label>
+                <input type="radio" id="sqwave1" name="osc1" value="square">
+                <label for="sqwave1">square</label>
+                <input type="radio" id="swwave1" name="osc1" value="sawtooth">
+                <label for="swwave1">sawtooth</label>
+            </div>
+            <label for="oscFreq1">frequency</label>
+            <input type="range" class="oscRange" id="oscFreq1" step="1" min="1" max="4000" value="300">
+            <button id="oscButton1">start</button>
+            <h3>filter</h3>
+            <label for="filterFreq1">cutoff</label>
+            <input type="range" class="oscRange" id="filterFreq1" step="1" min="10" max="4000" value="4000">
+            <label for="filterQ1">Q</label>
+            <input type="range" class="oscRange" id="filterQ1" step="0.01" min="0" max="50" value="0">
+            </div>
+        </div>
+        <div id="rightSection">
+            <div class="oscContent">
+            <div class="oscDetail" id="printOsc2"></div>
+            <div id="selectOsc2">
+                <input type="radio" id="snwave2" name="osc2" value="sine" checked>
+                <label for="snwave2">sine</label>
+                <input type="radio" id="trwave2" name="osc2" value="triangle">
+                <label for="trwave2">triangle</label>
+                <input type="radio" id="sqwave2" name="osc2" value="square">
+                <label for="sqwave2">square</label>
+                <input type="radio" id="swwave2" name="osc2" value="sawtooth">
+                <label for="swwave2">sawtooth</label>
+            </div>
+            <label for="oscFreq2">frequency</label>
+            <input type="range" class="oscRange" id="oscFreq2" step="1" min="1" max="4000" value="300">
+            <button id="oscButton2">start</button>
+            <h3>filter</h3>
+            <label for="filterFreq2">cutoff</label>
+            <input type="range" class="oscRange" id="filterFreq2" step="1" min="10" max="4000" value="4000">
+            <label for="filterQ2">Q</label>
+            <input type="range" class="oscRange" id="filterQ2" step="0.01" min="0" max="50" value="0">
+            </div>
+            </div>
+        </div>
+        <div id="clearFloat">
+            <input type="range" orient="vertical" class="oscFader" id="faderVol1" step="0.01" min="0" max="5" value="4">
+            <input type="range" orient="vertical" class="oscFader" id="faderVol2" step="0.01" min="0" max="5" value="4">
+            <input type="range" orient="vertical" class="oscFader" id="masterFader" step="0.01" min="0" max="5" value="4">
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

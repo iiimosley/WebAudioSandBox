@@ -1,0 +1,66 @@
+body {
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+}
+
+#mainHeader {
+    font-family: 'Faster One', Helvetica, Arial, sans-serif;
+    text-align: center;
+    letter-spacing: .3em;
+}
+
+main {
+    width: 80%;
+    margin: 2em auto;
+    border: 3px double black;
+}
+
+#leftSection {
+    float: left;
+    width: 45%;
+    /* text-align: center; */
+}
+
+#rightSection {
+    float: right;
+    width: 45%;
+    /* text-align: center; */
+}
+
+h3 {
+    margin: 1em auto .3em;
+}
+
+.oscRange {
+    display: block;
+    width: 30em;
+}
+
+.oscContent{
+    padding-left: 2em;
+}
+
+label {
+    font-size: .9em;
+}
+
+.oscDetail {
+    width: 70%;
+    height: 7vw;
+    margin: 1em auto;
+    border: 1px solid black;
+}
+
+.oscDetail>*{
+    text-align: center;
+}
+
+#clearFloat {
+    clear: both;
+    padding: 2em;
+    text-align: center;
+}
+
+.oscFader {
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical;
+}
